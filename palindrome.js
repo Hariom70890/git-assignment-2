@@ -1,14 +1,12 @@
 let str="123g321";
-let j=str.length;
-let ans=true;
-for(let i=0;i<=str.length;i++){
-    if(str[i]!==str[j]){
-       console.log("Not palindrome");
-       ans="false";
-       break;
-       j--;
-    }
+ 
+ bag="";
+for(let i=str.length-1;i>=0;i--){
+bag+=str[i];
 }
-if(ans==true){
-console.log("palindrome");
+    if(str!==bag){
+       console.log("Give str is not palindrome");
+    }
+ else{
+console.log("Give str is palindrome");
 }
